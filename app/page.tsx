@@ -2,64 +2,108 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="flex min-h-screen w-full flex-col items-center text-center">
+      <div className="flex flex-col items-center justify-center background bg-gray-100 w-full gap-5 py-10 px-5">
+        <h1 className="text-3xl font-bold">Pricing & Plans</h1>
+        <h2 className="text-lg text-gray-500 w-[80%] md:w-[60%] lg:w-[40%]">Discover the plan that unlocks the transformative power of digital art and join our vibrant comunity today</h2>
+      </div>
+      <section className="flex justify-center px-5 md:px-10 lg:px-20 w-full">
+        <table className="w-full table-fixed mt-10 mb-20">
+          <thead>
+            <tr>
+              <th className="">
+                
+              </th>
+              <th className="py-6 hidden lg:table-cell">
+                <p className="text-blue-900 font-bold text-lg">Free</p>
+                <h3 className="text-6xl font-bold mt-2">$0</h3>
+                <p className="text-gray-500 mt-2 mb-6">Per month</p>
+              </th>
+              <th className="py-6 hidden md:table-cell">
+                <p className="text-blue-900 font-bold text-lg">Team</p>
+                <h3 className="text-6xl font-bold mt-2">$59</h3>
+                <p className="text-gray-500 mt-2 mb-6">Per month</p>
+              </th>
+              <th className="bg-gray-900 rounded-t-lg py-6">
+                <p className="w-fit mx-auto bg-blue-900 rounded-full text-lg text-white px-2">Popular</p>
+                <h3 className="text-6xl font-bold mt-2 text-white">$99</h3>
+                <p className="mt-2 mb-6 text-white">Per month</p>
+              </th>
+              <th className="py-6">
+                <p className="text-blue-900 font-bold text-lg">Enterprise</p>
+                <h3 className="text-6xl font-bold mt-2">$299</h3>
+                <p className="text-gray-500 mt-2 mb-6">Per month</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100 rounded-tl-lg">Website number</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">01</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">10</td>
+              <td className="p-3 border-b border-gray-800 text-white bg-gray-900">50</td>
+              <td className="p-3 border-b border-gray-200">Unlimited</td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">Server storage</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">100 GB</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">500 GB</td>
+              <td className="p-3 border-b border-gray-800 text-white bg-gray-900">1 TB</td>
+              <td className="p-3 border-b border-gray-200">Unlimited</td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">Database</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">-</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">15</td>
+              <td className="p-3 border-b border-gray-800 text-white bg-gray-900">Unlimited</td>
+              <td className="p-3 border-b border-gray-200">Unlimited</td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">Unmetered Bandwidth</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">-</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell"><Image className="mx-auto block" src={"/check-1.svg"} alt="check" height={20} width={20}></Image></td>
+              <td className="p-3 border-b border-gray-800 bg-gray-900"><Image className="mx-auto block" src={"/check.svg"} alt="check" height={20} width={20}></Image></td>
+              <td className="p-3 border-b border-gray-200"><Image className="mx-auto block" src={"/check-1.svg"} alt="check" height={20} width={20}></Image></td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">SSD Disk</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">-</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">-</td>
+              <td className="p-3 border-b border-gray-800 bg-gray-900"><Image className="mx-auto block" src={"/check.svg"} alt="check" height={20} width={20}></Image></td>
+              <td className="p-3 border-b border-gray-200"><Image className="mx-auto block" src={"/check-1.svg"} alt="check" height={20} width={20}></Image></td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">VCPUS Fontworld</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">-</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">-</td>
+              <td className="p-3 border-b border-gray-800 bg-gray-900"><Image className="mx-auto block" src={"/check.svg"} alt="check" height={20} width={20}></Image></td>
+              <td className="p-3 border-b border-gray-200"><Image className="mx-auto block" src={"/check-1.svg"} alt="check" height={20} width={20}></Image></td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">Worldpress install</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">-</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">-</td>
+              <td className="p-3 border-b border-gray-800 bg-gray-900"><Image className="mx-auto block" src={"/check.svg"} alt="check" height={20} width={20}></Image></td>
+              <td className="p-3 border-b border-gray-200"><Image className="mx-auto block" src={"/check-1.svg"} alt="check" height={20} width={20}></Image></td>
+            </tr>
+            <tr>
+              <td className="text-left p-3 border-b font-bold border-gray-200 bg-gray-100">Server speed</td>
+              <td className="p-3 border-b border-gray-200 hidden lg:table-cell">-</td>
+              <td className="p-3 border-b border-gray-200 hidden md:table-cell">-</td>
+              <td className="p-3 border-b border-gray-800 bg-gray-900"><Image className="mx-auto block" src={"/check.svg"} alt="check" height={20} width={20}></Image></td>
+              <td className="p-3 border-b border-gray-200"><Image className="mx-auto block" src={"/check-1.svg"} alt="check" height={20} width={20}></Image></td>
+            </tr>
+            <tr>
+              <td className=""></td>
+              <td className=" align-middle text-blue-600 font-semibold p-5 hidden lg:table-cell">Get Started <Image className="mx-auto inline-block" src={"/down arrow-1.svg"} alt="arrow" width={25} height={25}></Image></td>
+              <td className=" align-middle text-blue-600 font-semibold p-5 hidden md:table-cell">Get Started <Image className="mx-auto inline-block" src={"/down arrow-1.svg"} alt="arrow" width={25} height={25}></Image></td>
+              <td className=" align-middle font-semibold text-white bg-yellow-800 rounded-b-lg p-5">Get Started <Image className="mx-auto inline-block" src={"/down arrow.svg"} alt="arrow" width={25} height={25}></Image></td>
+              <td className=" align-middle text-blue-600 font-semibold p-5">Get Started <Image className="mx-auto inline-block" src={"/down arrow-1.svg"} alt="arrow" width={25} height={25}></Image></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </main>
   );
 }
